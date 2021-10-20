@@ -1,14 +1,23 @@
 .eventCont {
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 1em;
+  padding-bottom: 2.75em;
+  border-bottom: .1em solid var(--black);
+}
+
+.bigEvent {
+  border-radius: .5em;
+  background-color: var(--gray);
+  height: 25em;
+  width: 100%;
+}
+
+.events {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: .5em;
-  border-radius: .5em;
-  padding: 1em;
-  border: .1em solid var(--black);
-  margin: 1em;
-}
-
-.event {
+  margin-top: .5em;
 }
 
 .eventImgCont {
@@ -21,6 +30,15 @@
   border-radius: .5em;
   height: 100%;
   width: 100%;
+}
+
+.eventLabel {
+  background-color: var(--gray);
+  padding-top: .5em;
+  padding-bottom: .5em;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
 }
 
 .charCont {
