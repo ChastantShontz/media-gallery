@@ -26,5 +26,6 @@
   padding-top: .25em;
   padding-bottom: .25em;
   border: .2em solid var(--black);
+  margin-top: auto;
   margin-bottom: 1em;
 }
