@@ -1,5 +1,6 @@
 .background {
   border-radius: 2em;
+  background-color: var(--white);
   border: .1em solid var(--black);
   margin-left: 10%;
   margin-right: 10%;

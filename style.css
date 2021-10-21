@@ -1,9 +1,21 @@
+body {
+  background-image: url(img/starWarsBackground.jpg);
+  background-attachment: fixed;
+  background-position: center bottom;
+}
+
+.background {
+  background-color: transparent !important;
+  border: none !important;
+}
+
 .eventCont {
+  border-radius: .5em;
+  background-color: var(--white);
   padding-left: 1em;
   padding-right: 1em;
   padding-top: 1em;
   padding-bottom: 2.75em;
-  border-bottom: .1em solid var(--black);
 }
 
 .bigEvent {
@@ -45,15 +57,16 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1em;
-  margin: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .char {
+  background-color: var(--white);
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: .5em;
-  border: .1em solid var(--black);
 }
 
 .charImgCont {
