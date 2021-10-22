@@ -19,14 +19,14 @@ body {
   padding-bottom: 1em;
 }
 
-.bigEvent {
+.primaryEvent {
   border-radius: .5em;
   background-color: var(--gray);
-  height: 25em;
+  height: 30em;
   width: 100%;
 }
 
-.smallEvents {
+.secondaryEvents {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: .5em;
@@ -179,3 +179,25 @@ body {
 }
 
 /*JavaScript Classes Below*/
+
+#primaryEvent1 {
+  background-image: url(img/greatHyperspaceWar.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#primaryEvent2 {
+  background-image: url(img/sackingOfCoruscant.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#primaryEvent3 {
+  background-image: url(img/thoughtBomb.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#primaryEvent4 {
+  background-image: url(img/yuuzhanVongInvasion.jpg);
+  background-size: cover;
+  background-position: center;
+}
