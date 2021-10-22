@@ -1,7 +1,8 @@
 body {
   background-image: url(img/starWarsBackground.jpg);
   background-attachment: fixed;
-  background-position: center bottom;
+  background-size: cover;
+  background-position: bottom;
 }
 
 .background {
@@ -44,18 +45,29 @@ body {
   background: var(--gray);
 }
 
-.eventImgCont {
+.eventImg {
   border-radius: .5em;
+  background-size: cover;
+  background-position: center;
+  opacity: 50%;
   height: 10em;
+  border: .01em solid var(--black);
 }
 
-.eventImg {
-  object-fit: cover;
-  border-radius: .5em;
-  opacity: 50%;
-  height: 100%;
-  width: 100%;
-  border: .01em solid black;
+#eventImg1 {
+  background-image: url(img/greatHyperspaceWar.jpg);
+}
+
+#eventImg2 {
+  background-image: url(img/sackingOfCoruscant.jpg);
+}
+
+#eventImg3 {
+  background-image: url(img/thoughtBomb.jpg);
+}
+
+#eventImg4 {
+  background-image: url(img/yuuzhanVongInvasion.jpg);
 }
 
 .eventLabel {
@@ -83,19 +95,62 @@ body {
   border-radius: .5em;
 }
 
-.charImgCont {
+.charImg {
   border-radius: .5em;
+  background-size: cover;
+  background-position: center;
   height: 15em;
   width: 80%;
+  border: .01em solid var(--black);
   margin-top: 1em;
 }
 
-.charImg {
-  object-fit: cover;
-  border-radius: .5em;
-  height: 100%;
-  width: 100%;
-  border: .01em solid black;
+#charImg1 {
+  background-image: url(img/haazen.jpg);
+}
+
+#charImg2 {
+  background-image: url(img/darthTraya.jpg);
+}
+
+#charImg3 {
+  background-image: url(img/revan.jpg);
+}
+
+#charImg4 {
+  background-image: url(img/meetraSurik.jpg);
+}
+
+#charImg5 {
+  background-image: url(img/darthBane.jpg);
+}
+
+#charImg6 {
+  background-image: url(img/quinlanVos.jpg);
+}
+
+#charImg7 {
+  background-image: url(img/darthKrayt.jpg);
+}
+
+#charImg8 {
+  background-image: url(img/grandAdmiralThrawn.jpg);
+}
+
+#charImg9 {
+  background-image: url(img/lumiya.jpg);
+}
+
+#charImg10 {
+  background-image: url(img/jacenSolo.jpg);
+}
+
+#charImg11 {
+  background-image: url(img/morriganCorde.jpg);
+}
+
+#charImg12 {
+  background-image: url(img/cadeSkywalker.jpg);
 }
 
 .text {
@@ -105,12 +160,22 @@ body {
 
 .view {
   border-radius: 5em;
-  background-color: var(--gray);
+  background-color: rgba(53, 97, 187, 10%);
   padding-left: .5em;
   padding-right: .5em;
   padding-top: .25em;
   padding-bottom: .25em;
-  border: .2em solid var(--black);
+  border: .2em solid var(--blue);
   margin-top: auto;
   margin-bottom: 1em;
+  color: var(--blue);
+  font-weight: bold;
+  cursor: pointer;
 }
+
+.view:hover {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+/*JavaScript Classes Below*/
