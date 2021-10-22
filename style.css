@@ -248,3 +248,7 @@ h3 {
 #charTitleTrans {
   font-size: 1.5em;
 }
+
+#viewTrans {
+  display: none;
+}
