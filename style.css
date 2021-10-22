@@ -224,11 +224,11 @@ body {
 }
 
 #eventDescript2 {
-  display: block;
+  display: none;
 }
 
 #eventDescript3 {
-  display: none;
+  display: block;
 }
 
 #eventDescript4 {
