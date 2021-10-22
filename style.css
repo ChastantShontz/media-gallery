@@ -29,6 +29,19 @@ body {
   width: 100%;
 }
 
+.eventDescripCont {
+  background: linear-gradient(to right, rgba(214, 214, 214, 0%), 10%, var(--gray), 90%, rgba(214, 214, 214, 0%));
+  margin-bottom: 1em;
+}
+
+.eventDescrip {
+  display: none;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: var(--black);
+  text-align: center;
+}
+
 .secondEvents {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -58,19 +71,19 @@ body {
   border: .01em solid var(--black);
 }
 
-#eventImg1 {
+.eventImg1 {
   background-image: url(img/greatHyperspaceWar.jpg);
 }
 
-#eventImg2 {
+.eventImg2 {
   background-image: url(img/sackingOfCoruscant.jpg);
 }
 
-#eventImg3 {
+.eventImg3 {
   background-image: url(img/thoughtBomb.jpg);
 }
 
-#eventImg4 {
+.eventImg4 {
   background-image: url(img/yuuzhanVongInvasion.jpg);
 }
 
@@ -109,55 +122,55 @@ body {
   margin-top: 1em;
 }
 
-#charImg1 {
+.charImg1 {
   background-image: url(img/haazen.jpg);
 }
 
-#charImg2 {
+.charImg2 {
   background-image: url(img/darthTraya.jpg);
 }
 
-#charImg3 {
+.charImg3 {
   background-image: url(img/revan.jpg);
 }
 
-#charImg4 {
+.charImg4 {
   background-image: url(img/meetraSurik.jpg);
 }
 
-#charImg5 {
+.charImg5 {
   background-image: url(img/darthBane.jpg);
 }
 
-#charImg6 {
+.charImg6 {
   background-image: url(img/quinlanVos.jpg);
 }
 
-#charImg7 {
+.charImg7 {
   background-image: url(img/darthKrayt.jpg);
 }
 
-#charImg8 {
+.charImg8 {
   background-image: url(img/grandAdmiralThrawn.jpg);
 }
 
-#charImg9 {
+.charImg9 {
   background-image: url(img/lumiya.jpg);
 }
 
-#charImg10 {
+.charImg10 {
   background-image: url(img/jacenSolo.jpg);
 }
 
-#charImg11 {
+.charImg11 {
   background-image: url(img/morriganCorde.jpg);
 }
 
-#charImg12 {
+.charImg12 {
   background-image: url(img/cadeSkywalker.jpg);
 }
 
-.text {
+.charText {
   width: 80%;
   margin-top: 0;
 }
@@ -182,7 +195,7 @@ body {
   color: var(--white);
 }
 
-/*JavaScript Classes Below*/
+/*JavaScript IDs Below*/
 
 #primEvent1 {
   background-image: url(img/greatHyperspaceWar.jpg);
@@ -206,31 +219,19 @@ body {
   background-position: center;
 }
 
-.eventDescriptCont {
-  background: linear-gradient(to right, rgba(214, 214, 214, 0%), 10%, var(--gray), 90%, rgba(214, 214, 214, 0%));
-  margin-bottom: 1em;
-}
-
-.eventDescript {
-  display: none;
-  margin-left: 10%;
-  margin-right: 10%;
-  color: var(--black);
-  text-align: center;
-}
-
-#eventDescript1 {
+#eventDescripTrans {
   display: block;
 }
 
-#eventDescript2 {
+#charTrans {
+  position: fixed;
+  left: 15%;
+  right: 15%;
+  top: 10%;
+  bottom: 10%;
   display: block;
+  padding: 2em;
 }
 
-#eventDescript3 {
-  display: block;
-}
-
-#eventDescript4 {
-  display: block;
+#charImgTrans {
 }
