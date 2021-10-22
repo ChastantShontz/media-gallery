@@ -220,11 +220,11 @@ body {
 }
 
 #eventDescript1 {
-  display: block;
+  display: none;
 }
 
 #eventDescript2 {
-  display: none;
+  display: block;
 }
 
 #eventDescript3 {
