@@ -5,6 +5,10 @@ body {
   background-position: bottom;
 }
 
+h3 {
+  text-align: center;
+}
+
 .background {
   background-color: transparent !important;
   border: none !important;
@@ -239,4 +243,8 @@ body {
   width: 45%;
   margin-right: 10%;
   margin-top: 0;
+}
+
+#charTitleTrans {
+  font-size: 1.5em;
 }
