@@ -15,7 +15,7 @@ body {
   padding-left: 1em;
   padding-right: 1em;
   padding-top: 1em;
-  padding-bottom: 2.75em;
+  padding-bottom: 1em;
 }
 
 .bigEvent {
@@ -25,11 +25,23 @@ body {
   width: 100%;
 }
 
-.events {
+.smallEvents {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: .5em;
   margin-top: .5em;
+}
+
+.event {
+  cursor: pointer;
+}
+
+.event:hover .eventImg {
+  opacity: 100%;
+}
+
+.event:hover .eventLabel {
+  background: var(--gray);
 }
 
 .eventImgCont {
@@ -40,15 +52,17 @@ body {
 .eventImg {
   object-fit: cover;
   border-radius: .5em;
+  opacity: 50%;
   height: 100%;
   width: 100%;
+  border: .01em solid black;
 }
 
 .eventLabel {
-  background-color: var(--gray);
+  background: linear-gradient(to right, var(--white), 20%, var(--gray), 80%, var(--white));
   padding-top: .5em;
   padding-bottom: .5em;
-  margin-top: 0;
+  margin-top: .25em;
   margin-bottom: 0;
   text-align: center;
 }
@@ -81,6 +95,7 @@ body {
   border-radius: .5em;
   height: 100%;
   width: 100%;
+  border: .01em solid black;
 }
 
 .text {
