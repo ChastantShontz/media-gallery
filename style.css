@@ -17,10 +17,7 @@ h3 {
 .eventCont {
   border-radius: .5em;
   background-color: var(--white);
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding: 1em;
 }
 
 .primEvent {
@@ -40,10 +37,6 @@ h3 {
 
 .eventDescrip {
   display: none;
-  margin-left: 10%;
-  margin-right: 10%;
-  color: var(--black);
-  text-align: center;
 }
 
 .secondEvents {
@@ -71,6 +64,7 @@ h3 {
   background-size: cover;
   background-position: center;
   opacity: 50%;
+  box-sizing: border-box;
   height: 10em;
   border: .01em solid var(--black);
 }
@@ -97,6 +91,7 @@ h3 {
   padding-bottom: .5em;
   margin-top: .25em;
   margin-bottom: 0;
+  font-size: 1.1em;
   text-align: center;
 }
 
@@ -114,16 +109,18 @@ h3 {
   flex-direction: column;
   align-items: center;
   border-radius: .5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .charImg {
   border-radius: .5em;
   background-size: cover;
   background-position: center;
+  box-sizing: border-box;
   height: 15em;
   width: 80%;
   border: .01em solid var(--black);
-  margin-top: 1em;
 }
 
 .charImg1 {
@@ -174,9 +171,13 @@ h3 {
   background-image: url(img/cadeSkywalker.jpg);
 }
 
-.charText {
+.charSum {
   width: 80%;
   margin-top: 0;
+}
+
+.charDescrip {
+  display: none;
 }
 
 .view {
@@ -188,7 +189,6 @@ h3 {
   padding-bottom: .25em;
   border: .2em solid var(--blue);
   margin-top: auto;
-  margin-bottom: 1em;
   color: var(--blue);
   font-weight: bold;
   cursor: pointer;
@@ -225,6 +225,11 @@ h3 {
 
 #eventDescripTrans {
   display: block;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: var(--black);
+  font-size: 1.1em;
+  text-align: center;
 }
 
 #charTrans {
@@ -235,6 +240,7 @@ h3 {
   bottom: 10%;
   display: block;
   padding: 2em;
+  padding-right: 4em;
 }
 
 #charImgTrans {
@@ -247,6 +253,23 @@ h3 {
 
 #charTitleTrans {
   font-size: 1.5em;
+}
+
+#charSumTrans {
+  display: none;
+}
+
+#charDescripTrans {
+  display: block;
+  border-radius: .5em;
+  box-sizing: border-box;
+  height: 23.5em;
+  padding: .25em;
+  border: .01em solid var(--black);
+  margin-top: 0;
+  font-size: 1.1em;
+  text-align: justify;
+  overflow-y: scroll;
 }
 
 #viewTrans {
