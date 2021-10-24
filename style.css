@@ -240,6 +240,7 @@ h3 {
   display: block;
   padding: 2em;
   padding-right: 4em;
+  border: .01em solid var(--black);
 }
 
 #charImgTrans {
