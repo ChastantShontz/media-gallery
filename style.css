@@ -230,6 +230,12 @@ body {
   overflow-y: scroll;
 }
 
+.btn {
+  background: red;
+  height: 5em;
+  width: 5em;
+}
+
 /*JavaScript IDs Below*/
 
 #primEvent1 {
@@ -279,4 +285,8 @@ body {
   padding: 2em;
   padding-right: 4em;
   border: .01em solid var(--black);
+}
+
+.testTrans {
+  background-color: blue;
 }
