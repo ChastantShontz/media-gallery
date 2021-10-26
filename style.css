@@ -5,10 +5,6 @@ body {
   background-position: bottom;
 }
 
-h3 {
-  text-align: center;
-}
-
 .background {
   background-color: transparent !important;
   border: none !important;
@@ -109,6 +105,7 @@ h3 {
   flex-direction: column;
   align-items: center;
   border-radius: .5em;
+  height: auto;
   padding-top: 1em;
   padding-bottom: 1em;
 }
@@ -171,13 +168,13 @@ h3 {
   background-image: url(img/cadeSkywalker.jpg);
 }
 
+.charTitle {
+  text-align: center;
+}
+
 .charSum {
   width: 80%;
   margin-top: 0;
-}
-
-.charDescrip {
-  display: none;
 }
 
 .view {
@@ -196,6 +193,41 @@ h3 {
 .view:hover {
   background-color: var(--blue);
   color: var(--white);
+}
+
+.charHid {
+  display: none;
+}
+
+.charImgHid {
+  float: left;
+  border-radius: .5em;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  height: 100%;
+  width: 45%;
+  border: .01em solid var(--black);
+  margin-right: 10%;
+  margin-top: 0;
+}
+
+.charTitleHid {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.charDescrip {
+  display: block;
+  border-radius: .5em;
+  box-sizing: border-box;
+  height: 23.5em;
+  padding: .25em;
+  border: .01em solid var(--black);
+  margin-top: 0;
+  font-size: 1.1em;
+  text-align: justify;
+  overflow-y: scroll;
 }
 
 /*JavaScript IDs Below*/
@@ -232,46 +264,19 @@ h3 {
 }
 
 #charTrans {
+  visibility: hidden;
+}
+
+#charHidTrans {
+  display: block;
   position: fixed;
   left: 15%;
   right: 15%;
   top: 10%;
   bottom: 10%;
-  display: block;
+  border-radius: .5em;
+  background-color: var(--white);
   padding: 2em;
   padding-right: 4em;
   border: .01em solid var(--black);
-}
-
-#charImgTrans {
-  float: left;
-  height: 100%;
-  width: 45%;
-  margin-right: 10%;
-  margin-top: 0;
-}
-
-#charTitleTrans {
-  font-size: 1.5em;
-}
-
-#charSumTrans {
-  display: none;
-}
-
-#charDescripTrans {
-  display: block;
-  border-radius: .5em;
-  box-sizing: border-box;
-  height: 23.5em;
-  padding: .25em;
-  border: .01em solid var(--black);
-  margin-top: 0;
-  font-size: 1.1em;
-  text-align: justify;
-  overflow-y: scroll;
-}
-
-#viewTrans {
-  display: none;
 }
