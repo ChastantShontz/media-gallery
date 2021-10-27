@@ -17,7 +17,7 @@ body {
 }
 
 .primEvent {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: flex-end;
   border-radius: .5em;
@@ -26,13 +26,41 @@ body {
   width: 100%;
 }
 
+.primEvent1 {
+  background-image: url(img/greatHyperspaceWar.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.primEvent2 {
+  background-image: url(img/sackingOfCoruscant.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.primEvent3 {
+  background-image: url(img/thoughtBomb.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.primEvent4 {
+  background-image: url(img/yuuzhanVongInvasion.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
 .eventDescripCont {
-  background: linear-gradient(to right, rgba(214, 214, 214, 0%), 10%, var(--gray), 90%, rgba(214, 214, 214, 0%));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0%), 10%, var(--gray), 90%, rgba(255, 255, 255, 0%));
   margin-bottom: 1em;
 }
 
 .eventDescrip {
-  display: none;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: var(--black);
+  font-size: 1.1em;
+  text-align: center;
 }
 
 .secondEvents {
@@ -82,7 +110,7 @@ body {
 }
 
 .eventLabel {
-  background: linear-gradient(to right, var(--white), 20%, var(--gray), 80%, var(--white));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0%), 20%, var(--gray), 80%, rgba(255, 255, 255, 0%));
   padding-top: .5em;
   padding-bottom: .5em;
   margin-top: .25em;
@@ -196,7 +224,18 @@ body {
 }
 
 .charHid {
+  z-index: 2;
   display: none;
+  position: fixed;
+  left: 15%;
+  right: 15%;
+  top: 10%;
+  bottom: 10%;
+  border-radius: .5em;
+  background-color: var(--white);
+  padding: 2em;
+  padding-right: 4em;
+  border: .01em solid var(--black);
 }
 
 .charImgHid {
@@ -218,7 +257,6 @@ body {
 }
 
 .charDescrip {
-  display: block;
   border-radius: .5em;
   box-sizing: border-box;
   height: 23.5em;
@@ -230,43 +268,27 @@ body {
   overflow-y: scroll;
 }
 
+.layer {
+  z-index: 1;
+  display: none;
+  position: fixed;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background-color: rgba(214, 214, 214, 75%);
+}
+
 .btn {
   background: red;
   height: 5em;
   width: 5em;
 }
 
-/*JavaScript IDs Below*/
+/* JavaScript IDs Below */
 
-#primEvent1 {
-  background-image: url(img/greatHyperspaceWar.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-#primEvent2 {
-  background-image: url(img/sackingOfCoruscant.jpg);
-  background-size: cover;
-  background-position: center;
-}
-#primEvent3 {
-  background-image: url(img/thoughtBomb.jpg);
-  background-size: cover;
-  background-position: center;
-}
-#primEvent4 {
-  background-image: url(img/yuuzhanVongInvasion.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-#eventDescripTrans {
-  display: block;
-  margin-left: 10%;
-  margin-right: 10%;
-  color: var(--black);
-  font-size: 1.1em;
-  text-align: center;
+#primEventTrans {
+  display: flex;
 }
 
 #charTrans {
@@ -275,16 +297,10 @@ body {
 
 #charHidTrans {
   display: block;
-  position: fixed;
-  left: 15%;
-  right: 15%;
-  top: 10%;
-  bottom: 10%;
-  border-radius: .5em;
-  background-color: var(--white);
-  padding: 2em;
-  padding-right: 4em;
-  border: .01em solid var(--black);
+}
+
+#layerTrans {
+  display: block;
 }
 
 .testTrans {
