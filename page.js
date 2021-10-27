@@ -213,3 +213,18 @@ function cadeSkywalkerClose() {
   var x = document.getElementById('layer');
   x.classList.remove('layerTrans');
 }
+
+function uncover() {
+  var x = document.getElementsByClassName('char');
+  var y;
+  for (y = 0; y < x.length; y++) {
+    x[y].classList.remove('charTrans');
+  }
+  var x = document.getElementsByClassName('charHid');
+  var y;
+  for (y = 0; y < x.length; y++) {
+    x[y].classList.remove('charHidTrans');
+  }
+  var x = document.getElementById('layer');
+  x.classList.remove('layerTrans');
+}
