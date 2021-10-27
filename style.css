@@ -300,32 +300,22 @@ body {
   background-color: rgba(214, 214, 214, 75%);
 }
 
-.btn {
-  background: red;
-  height: 5em;
-  width: 5em;
-}
-
 /* JavaScript Classes */
 
-#primEventTrans {
+.primEventTrans {
   display: flex;
 }
 
-#charTrans {
+.charTrans {
   visibility: hidden;
 }
 
-#charHidTrans {
+.charHidTrans {
   display: block;
 }
 
-#layerTrans {
+.layerTrans {
   display: block;
-}
-
-.testTrans {
-  background-color: blue;
 }
 
 /* Root Colors */
