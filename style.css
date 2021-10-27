@@ -268,6 +268,27 @@ body {
   overflow-y: scroll;
 }
 
+.close {
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  border-top-right-radius: .25em;
+  border-bottom-left-radius: .25em;
+  background-color: var(--white);
+  padding-left: .25em;
+  padding-right: .25em;
+  padding-bottom: .1em;
+  border: none;
+  font-size: 2em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  background-color: var(--closeRed);
+  color: var(--white);
+}
+
 .layer {
   z-index: 1;
   display: none;
@@ -285,7 +306,7 @@ body {
   width: 5em;
 }
 
-/* JavaScript IDs Below */
+/* JavaScript Classes */
 
 #primEventTrans {
   display: flex;
@@ -305,4 +326,10 @@ body {
 
 .testTrans {
   background-color: blue;
+}
+
+/* Root Colors */
+
+:root {
+  --closeRed: #ff605c;
 }
