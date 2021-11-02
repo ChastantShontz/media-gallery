@@ -229,31 +229,38 @@ function uncover() {
   x.classList.remove('layerTrans');
 }
 
-var slideIndex = 1;
-showSlides(slideIndex);
+var x = 1;
+showSlide(x);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function changeSlide(n) {
+  showSlide(x += n);
 }
 
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+  showSlide(x = n);
 }
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("primEvent");
-  var dots = document.getElementsByClassName("event");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+function showSlide(n) {
+  var y;
+  var slide = document.getElementsByClassName("primEvent");
+  if (n > slide.length) {
+    x = 1;
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+  if (n < 1) {
+    x = slide.length;
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
+  for (y = 0; y < slide.length; y++) {
+    slide[y].style.display = "none";
+  }
+  slide[x - 1].style.display = "block";
+  var preview = document.getElementsByClassName("event");
+  for (y = 0; y < preview.length; y++) {
+    preview[y].style.opacity = "50%";
+  }
+  preview[x - 1].style.opacity = "100%";
+  var label = document.getElementsByClassName("eventLabel");
+  for (y = 0; y < label.length; y++) {
+    label[y].style.background = "linear-gradient(to right, rgba(255, 255, 255, 0%), 20%, var(--gray), 80%, rgba(255, 255, 255, 0%))";
+  }
+  label[x - 1].style.background = "var(--gray)";
 }
