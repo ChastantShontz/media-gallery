@@ -10,6 +10,28 @@ body {
   border: none !important;
 }
 
+.nav {
+  display: flex;
+  justify-content: space-between;
+  border-radius: .5em;
+  background-color: var(--white);
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-bottom: 1em;
+}
+
+.link {
+  border-radius: 5px;
+  padding: .5em;
+  color: var(--black);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--hoverpurple);
+  text-decoration: underline;
+}
+
 .eventCont {
   border-radius: .5em;
   background-color: var(--white);
@@ -362,4 +384,5 @@ body {
 
 :root {
   --closeRed: #ff605c;
+  --hoverpurple: purple;
 }
