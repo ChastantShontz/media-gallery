@@ -425,6 +425,9 @@ body {
   .eventDescrip {overflow-y: scroll;}
   .secondEvents {grid-template-columns: repeat(2, 1fr);}
   .charCont {grid-template-columns: repeat(2, 1fr);}
+  .charHid {padding-right: 2em;}
+  .charImgHid {float: none; height: 42.5%; width: 100%;}
+  .charDescrip {height: 42.5%;}
 }
 
 @media screen and (max-width: 549px) {
@@ -433,4 +436,7 @@ body {
   .eventDescrip {overflow-y: scroll;}
   .secondEvents {grid-template-columns: repeat(2, 1fr);}
   .charCont {grid-template-columns: repeat(1, 1fr);}
+  .charHid {padding-right: 2em;}
+  .charImgHid {float: none; height: 42.5%; width: 100%;}
+  .charDescrip {height: 42.5%;}
 }
