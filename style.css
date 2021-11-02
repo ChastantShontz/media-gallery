@@ -422,6 +422,9 @@ body {
 }
 
 @media screen and (min-width: 550px) and (max-width: 767px) {
+  .eventDescrip {overflow-y: scroll;}
+  .secondEvents {grid-template-columns: repeat(2, 1fr);}
+  .charCont {grid-template-columns: repeat(2, 1fr);}
 }
 
 @media screen and (max-width: 549px) {
