@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Chastant Shontz">
+    <meta name="description" content="Gallery of media cards of Star Wars characters">
+    <title>Star Wars Characters Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+  </head>
+  <body>
+    <div class="background">
+      <nav class="nav">
+        <p><a href="#" class="link"><b>&#8592; Back</b></a></p>
+        <p><b><i>Star Wars</i> Characters</b></p>
+        <p><a href="#" class="link"><b>Forward &#8594;</b></a></p>
+      </nav>
+      <article>
+        <div class="eventCont">
+          <div class="primEvent primEvent1">
+            <p class="numbers">1 of 4</p>
+            <div class="buttonCont">
+              <button type="button" class="prev" onclick="changeSlide(-1)">&#10094;</button>
+              <button type="button" class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+            <p class="eventDescrip">The first major war between the Jedi and Sith was the <b>Great Hyperspace War</b>.  For a century before this, the Sith Empire lived in isolation under the stable rule of Sith Emperor Marka Ragnos.  However, following Ragnos's death, a power struggle erupted between the rival Sith Lords Naga Sadow and Ludo Kressh.  The discovery of the Sith homeworld of Korriban by the hyperspace scouts Gav and Jori Daragon brought the Empire into contact with the Galactic Republic, and an invasion led by Sadow commenced.  Despite his usage of battle meditation to bolster his forces, Sadow was ultimately defeated by Empress Teta.  His flagship crash landed on Yavin 4, where he lived out the remainder of his life in exile.</p>
+          </div>
+          <div class="primEvent primEvent2">
+            <p class="numbers">2 of 4</p>
+            <div class="buttonCont">
+              <button type="button" class="prev" onclick="changeSlide(-1)">&#10094;</button>
+              <button type="button" class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+            <p class="eventDescrip">After almost thirty years of war between the Galactic Republic and the Sith Empire, the conflict was brough to an end with the <b>Sacking of Coruscant</b>.  Mentally influenced by the imprisoned Jedi Revan, the Sith Emperor decided to vie for peace.  While the Republic was distracted with the negotiations on Alderaan, the Sith Lord Darth Malgus led an attack on the Jedi Temple on Coruscant, decimating it.  Holding Coruscant hostage, the Empire was then able to force the Republic into signing the unfavorable Treaty of Coruscant.  Under these terms, half of the galaxy was handed over to the Empire, ushering in a new era of Cold War that lasted for over a decade.</p>
+          </div>
+          <div class="primEvent primEvent3">
+            <p class="numbers">3 of 4</p>
+            <div class="buttonCont">
+              <button type="button" class="prev" onclick="changeSlide(-1)">&#10094;</button>
+              <button type="button" class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+            <p class="eventDescrip">The Sith Lord Darth Bane orchestrated the destruction of the flawed Brotherhood of Darkness using the <b>thought bomb</b>.  This was a complex dark side ritual that instantly vaporized all Force-sensitive beings within its vacinity, including the ones who created it.  After one thousand years of constant warfare between the Jedi and Sith, culminating in a two-year-long campaign on Ruusan, both sides were on the brink of destruction.  Bane, who had grown disillusioned with the Brotherhood's philosophy of all Sith being equals, manipulated its leader Skere Kaan into using the thought bomb against the Army of Light.  Afterward, as the sole surviving Sith, Bane established the Rule of Two, which dictated that there could be no more than two Sith at a time:  a master and an apprentice.</p>
+          </div>
+          <div class="primEvent primEvent4">
+            <p class="numbers">4 of 4</p>
+            <div class="buttonCont">
+              <button type="button" class="prev" onclick="changeSlide(-1)">&#10094;</button>
+              <button type="button" class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+            <p class="eventDescrip">The most descructive conflict in galactic history was the <b>Yuuzhan Vong invasion</b>.  The Yuuzhan Vong were alien refugees from another galaxy, which was largely destroyed in terrible civil war.  For fifteen thousand years, they wanted between galaxies looking for a new one to call home.  When the Vong finally settled on a galaxy to invade, the once hostile New Republic and Imperial Remnant were forced into an uneasy alliance to combat them.  Victory was only achieved with help from the sentient extra-galactic planet Zonama Sekot, the seed of the Vong's own homeworld Yuuzhan'tar.  Supreme Overlord Shimrra Jamaane was killed by Luke Skywalker, and the Vong were exiled from the galaxy onboard Sekot.</p>
+          </div>
+          <div class="secondEvents">
+            <div class="secondEventCont" onclick="currentSlide(1)">
+              <div class="event event1">
+              </div>
+              <p class="eventLabel">Great Hyperspace War</p>
+            </div>
+            <div class="secondEventCont" onclick="currentSlide(2)">
+              <div class="event event2">
+              </div>
+              <p class="eventLabel">Sacking of Coruscant</p>
+            </div>
+            <div class="secondEventCont" onclick="currentSlide(3)">
+              <div class="event event3">
+              </div>
+              <p class="eventLabel">Thought Bomb</p>
+            </div>
+            <div class="secondEventCont" onclick="currentSlide(4)">
+              <div class="event event4">
+              </div>
+              <p class="eventLabel">Yuuzhan Vong Invasion</p>
+            </div>
+          </div>
+        </div>
+        <div class="charCont">
+          <div class="char" id="haazen">
+            <div class="charImg charImg1">
+            </div>
+            <h3 class="charTitle">Haazen</h3>
+            <p class="charSum">A failed Jedi who attempted to rule over both the Jedi and Sith by enhancing his damaged body with their artifacts.</p>
+            <button type="button" class="view" onclick="haazenView()">View</button>
+          </div>
+          <div class="charHid" id="haazenHid">
+            <div class="charImgHid charImg1">
+            </div>
+            <h3 class="charTitleHid">Haazen</h3>
+            <p class="charDescrip">Unlike his best friend, the renowned Jedi Barrison Draay, <b>Haazen</b> possessed very little talent with the Force.  Despite failing his Jedi training as a result of this, he continued serving Barrison as a steward.<br><br>During the Great Sith War, Haazen was approached by a Sith minion named Dossa, who convinced him to join her cause by stoking his jealousy toward Barrison.  Haazen led Barrison into a trap set by Dossa, although she betrayed him and detonated the charges before he could get clear.  Barely alive, Haazen's damaged body was rebuilt with cybernetic parts.  He then killed Dossa, vowing to someday surpass both the Jedi and Sith.<br><br>Afterward, Barrison's wife Krynda Draay founded the Jedi Covenant, an extremist sect of the Jedi Order dedicated to preventing the return of the Sith.  Haazen continued to serve Krynda, who was unaware of the role he played in Barrison's death.  This position in the Covenant allowed him to acquire many Jedi and Sith artifacts, building them into his body to enhance himself.<br><br>At the height of the Mandalorian Wars, Haazen launched a Covenant coup against the Jedi Order by claiming that the Jedi High Council had been influenced by the Sith.  He also took control of the Republic fleet and used it to fire on Coruscant, while protected from all physical harm by the Gauntlet of Kressh the Younger.<br><br>Haazen planned to build parallel armies of Jedi and Sith under his command, the Jedi led by the failed Padawan Zayne Carrick and the Sith led by Barrison and Krynda's son Lucien Draay.  However, Carrick managed to trick Haazen into relinquishing the Gauntlet of Kressh the Younger, allowing him to be killed in the orbital bombardment.</p>
+            <button type="button" class="close" onclick="haazenClose()">&times;</button>
+          </div>
+          <div class="char" id="darthTraya">
+            <div class="charImg charImg2">
+            </div>
+            <h3 class="charTitle">Darth Traya</h3>
+            <p class="charSum">The founder of the Sith Triumvirate who later trained Meetra Surik to destroy them after being betrayed by Darth Nihilus and Darth Sion.</p>
+            <button type="button" class="view" onclick="darthTrayaView()">View</button>
+          </div>
+          <div class="charHid" id="darthTrayaHid">
+            <div class="charImgHid charImg2">
+            </div>
+            <h3 class="charTitleHid">Darth Traya</h3>
+            <p class="charDescrip">Once an esteemed Jedi Master, <b>Kreia</b> had her reputation ruined when her most famous Padawan, Revan, disobeyed the Jedi High Council to aid the Galactic Republic in the Mandalorian Wars.  Exiled from the Jedi Order as a result of this, she discovered the Trayus Academy on Malachor V, which had been used by Revan to train Sith Apprentices during his time as the Sith Lord Darth Revan.<br><br>This dark side nexus corrupted Kreia to the dark side and she became <b>Darth Traya</b>, the Lord of Betrayal.  Traya took on a pair of apprentices, the Lord of Hunger Darth Nihilus and the Lord of Pain Darth Sion.  Together, they formed the Sith Triumvirate.<br><br>However, Nihilus and Sion eventually betrayed Traya, stripping her of her Force-sensitivity and casting her out.  They then went on to almost completely wipe out the Jedi with the First Jedi Purge.  Having been betrayed by both the Jedi and Sith, Traya now sought to free the galaxy of the Force's influence and took back her old name of Kreia.<br><br>She found a new apprentice in the former Jedi Meetra Surik, who had also been exiled for her participation in the Mandalorian Wars and cut herself off from the Force during its traumatic final battle.  Kreia trained Surik to regain this connection and helped her find the Jedi Enclave on Dantooine.  Revealing her true identity, she killed all the Jedi Masters there.<br><br>Kreia became Darth Traya again, breaking Sion's will and enslaving him.  She then manipulated Surik into killing both Nihilus and Sion.  As Surik's final test, she killed Traya as well at the Trayus Academy.</p>
+            <button type="button" class="close" onclick="darthTrayaClose()">&times;</button>
+          </div>
+          <div class="char" id="revan">
+            <div class="charImg charImg3">
+            </div>
+            <h3 class="charTitle">Revan</h3>
+            <p class="charSum">A Jedi who was brainwashed into becoming a Sith Lord before turning back to the light side and attempting to kill the Sith Emperor.</p>
+            <button type="button" class="view" onclick="revanView()">View</button>
+          </div>
+          <div class="charHid" id="revanHid">
+            <div class="charImgHid charImg3">
+            </div>
+            <h3 class="charTitleHid">Revan</h3>
+            <p class="charDescrip">The Jedi who would later be known as <b>Revan</b> trained under many Jedi Masters, predominantly Kreia.  When the Mandalorians invaded the Galactic Republic, the Jedi High Council forbid the Jedi from interfering in the war.  However, Revan and his friend Alek Squinquargesimus disobeyed the Council and led a splinter group of like-minded Jedi called the Revanchists in defense of the Republic.<br><br>On Cathar, they came across the aftermath of a massacre where the Mabdalorians had wiped out almost the entire Cathar species by herding them into the ocean.  One Mandalorian had objected to this, only to be executed along with them.  Donning her mask, this Jedi declared himself Revan and vowed to destroy the Mandalorians.<br><br>In a final battle above Malachor V, Revan killed their leader, Mandalore the Ultimate.  With his dying breath, Mandalore revealed that he had been manipulated into invading the Republic by the Sith.<br><br>Revan and Alek embarked on a search for this mysterious Sith in the Unknown Regions.  They eventually discovered the resurgent Sith Empire on Dromund Kaas and infiltrated it in an attempt to assassinate the Sith Emperor.  However, he easily defeated them and twisted them to the dark side, renaming them <b>Darth Revan</b> and Darth Malak.<br><br>The Emperor sent Revan and Malak to find the Star Forge, an ancient Rakatan superweapon capable of producing infinite weapons of war.  They succeeded, but betrayed the Emperor and decided to invade the Republic on their own.<br><br>Revan was later betrayed in turn by Malak when a strike team of Jedi led by Bastila Shan attacked him.  Malak fired on Revan's flagship, presumably killing him.  In truth, Revan survived and was healed by Bastila, who wiped his memory and gave him a new identity as a Republic soldier.<br><br>Revan gradually rediscovered his Force-sensitivity and trained as a Jedi again under Bastila.  He retraced his steps to the Star Forge and destroyed it, as well as killing Malak.  Afterward, he and Bastila were married.<br><br>Still, Revan was haunted by nightmares of the Sith on Dromund Kaas.  With help from the Mandalorian Canderous Ordo, he left to find it again, leaving Bastila pregnant with their son Vaner Shan.  However, he was captured again by the Sith Lords Darth Nyriss and Scourge, who held him prisoner for years.<br><br>Revan was later freed when his Jedi friend Meetra Surik came looking for him.  Scourge also joined Revan and Surik in their quest to kill the Emperor after learning that he planned to eradicate all life in the universe with a dark side ritual.<br><br>During their confrontation with the Emperor, Scourge had a vision of another Jedi called the Hero of Tython defeating the Emperor and realized that Revan was not powerful enough.  He betrayed them, killing Surik and capturing Revan, so he could bide his time until the Hero appeared.<br><br>The Emperor imprisoned Revan in statis for over three hundred years, probing his mind in an attempt to learn the Republic's secrets.  Revan was able to use this connection to manipulate the Emperor into vying for peace with the Treaty of Coruscant.<br><br>After eventually being freed by the Jedi, Revan sought to destroy the Emperor with an army of droids that he created using another Rakatan superweapon called the Foundry.  He was defeated by a Sith strike team led by Darth Malgus and vanished in a flash of light.<br><br>Rather than dying, though, Revan split into light and dark halves.  While his light half existed as a spirit, ready to move on, his dark half clung to the physical world.  This dark Revan assumed control of the Order of Revan, a cult worshipping him that had infiltrated both the Republic and the Empire.<br><br>Revan found the Emperor, who had since been defeated by the Hero, hiding as a spirit on Yavin 4.  He planned to resurrect the Emperor so he could kill him permanently, although the Jedi and Sith formed an allience to stop him.  After being defeated by them, dark Revan merged with the spirit that was light Revan, finally becoming one with the Force.<br><br>Revan's spirit later manifested in the mind of his descendent, Jedi Grand Master Satele Shan, to aid her in the final battle against the Emperor.  Along with the spirits of everyone the Emperor had ever hurt, including Surik and Scourge, he was able to vanquish the Emperor once and for all.</p>
+            <button type="button" class="close" onclick="revanClose()">&times;</button>
+          </div>
+          <div class="char" id="meetraSurik">
+            <div class="charImg charImg4">
+            </div>
+            <h3 class="charTitle">Meetra Surik</h3>
+            <p class="charSum">An exiled Jedi who cut herself off from the Force before being trained by Kreia to destroy the Sith Triumvirate.</p>
+            <button type="button" class="view" onclick="meetraSurikView()">View</button>
+          </div>
+          <div class="charHid" id="meetraSurikHid">
+            <div class="charImgHid charImg4">
+            </div>
+            <h3 class="charTitleHid">Meetra Surik</h3>
+            <p class="charDescrip">Despite the Jedi High Council resolving to stay out of the Mandalorian Wars, <b>Meetra Surik</b> was one of the Revanchists who disobeyed them and joined the fight.  During the final battle above Malachor V, she activated a superweapon called the Mass Shadow generator that destroyed all ships on both sides by pulling them into the planet's surface.<br><br>Sensing all the deaths here was so traumatic for Surik that she cut herself off from the Force.  Afterward, she was cast out of the Jedi Order for her participation in the Mandalorian Wars and became known as the <b>Jedi Exile</b>.<br><br>It was because of this that Surik was able to survive the First Jedi Purge enacted by the Sith Triumvirate.  The Jedi Atris orchestrated her return to Republic space in order to draw out the Sith.  Surik was joined in her quest by a mysterious individual named Kreia, who trained her to regain her connection to the Force.<br><br>Surik and Kreia sought help from the Jedi Enclave on Dantooine, only to be turned away because of Surik's banishment.  Kreia then revealed her true identity as Darth Traya, founder of the Triumvirate, and kill all the Jedi Masters there.<br><br>Surik went on to kill another member of the Triumvirate, Darth Nihilus, with help from his former apprentice Visas Marr.  She then confronted Traya and its last member, Darth Sion, at the Trayus Academy on Malachor V and killed them both.<br><br>Afterward, she left Republic space in search of the Revanchists's former leader Revan, who had vanished years ago.  Surik retraced Revan's steps and discovered the resurgent Sith Empire on Dromund Kaas, where Revan was being held prisoner by the Sith Lord Scourge.<br><br>Knowing that the Sith Emperor planned to wipe out all life in the universe with a dark side ritual, Scourge helped Surik free Revan.  However, while confronting the Emperor, Scourge had a vision of another Jedi named the Hero of Tython defeating the Emperor and realized that they couldn't win.  He betrayed and killed Surik, as well as capturing Revan, so he could bide his time until the Hero appeared.<br><br>While Revan was imprisoned for over three hundred years, Surik's spirit continued to give him strength to resist the Emperor's mental probing.  She also manifested in the mind of Jedi Grand Master Satele Shan to aid her in the final battle against the Emperor.  The combined spirits of everyone the Emperor had ever hurt, including Revan and Scourge, were able to vanquish him once and for all.</p>
+            <button type="button" class="close" onclick="meetraSurikClose()">&times;</button>
+          </div>
+          <div class="char" id="darthBane">
+            <div class="charImg charImg5">
+            </div>
+            <h3 class="charTitle">Darth Bane</h3>
+            <p class="charSum">A Sith Lord in the Brotherhood of Darkness who orchestrated its destruction so that he could establish the Rule of Two.</p>
+            <button type="button" class="view" onclick="darthBaneView()">View</button>
+          </div>
+          <div class="charHid" id="darthBaneHid">
+            <div class="charImgHid charImg5">
+            </div>
+            <h3 class="charTitleHid">Darth Bane</h3>
+            <p class="charDescrip">As a result of his mother dying in childbirth, <b>Dessel</b> was relentlessly abused by his father Hurst for his entire childhood.  One day, after nearly being beaten to death, Des used his latent Force-sensitivity to kill Hurst by giving him a heart attack.<br><br>Inheriting all of Hurst's debt, Des was forced to work in the cortosis mines on Apatros.  He fled Apatros after accidentally killing a Republic officer in a brawl and joined the military of the Brotherhood of Darkness.<br><br>Des's strength in the Force was discovered by the Sith Lord Kopecz, who brought him to the Sith Academy on Korriban.  There, he renamed himself <b>Bane</b> after Hurst's nickname for him.  Despite being a very promising student initially, the realization that he had been responsible for Hurst's death caused Bane to temporarily cut himself off from the Force.<br><br>It was with help from the fellow Sith Apprentice Githany that Bane was able to regain his connection to the Force.  Eventually, he was powerful enouogh to defeat the Academy's top student, Sirak.  Throughout their training, Bane and Githany also started to develop feelings for each other.<br><br>Bane soon came to be disillusioned with the Brotherhood and its philosophy that all Sith were equal.  This led him to leave and proclaim himself <b>Darth Bane</b>, a title which had been discarded centuries ago.  Inspired by the holocron of the ancient Sith Lord Darth Revan, he sought to replace the Brotherhood with only two Sith at a time:  a master and an apprentice.<br><br>After surviving several assassination attempts from the Brotherhood, Bane traveled to Ruusan, where it was in the middle of waging a two-year-long campaign against the Army of Light.  He tricked its leader, Skere Kaan, into using a dark side ritual called the thought bomb that vaporized all Force-sensitive beings within its vacinity, wiping out the Brotherhood.<br><br>As he fled from the thought bomb, Bane came across an orphan girl named Rain who had just unintentionally used the Force to kill a pair of Jedi.  He took her on as his apprentice, dubbing her Darth Zannah.<br><br>The Rule of Two was almost exposed a decade later when Zannah was reunited with her cousin the former Jedi Darovit.  However, she was able to trick the other Jedi into killing Darovit under the belief that he was the last surviving Sith.<br><br>Bane eventually came to believe that Zannah was an unworthy apprentice due to her reluctance to challenge him for the mantle of Sith Master.  He temporarily took on another one, a Force-sensitive assassin known as the Huntress.  However, in a final duel on Ambria, Zannah destroyed Bane and took the Huntress on as her own apprentice.</p>
+            <button type="button" class="close" onclick="darthBaneClose()">&times;</button>
+          </div>
+          <div class="char" id="quinlanVos">
+            <div class="charImg charImg6">
+            </div>
+            <h3 class="charTitle">Quinlan Vos</h3>
+            <p class="charSum">A Jedi during the Clone Wars who nearly fell to the dark side while infiltrating the Confederacy of Independent Systems.</p>
+            <button type="button" class="view" onclick="quinlanVosView()">View</button>
+          </div>
+          <div class="charHid" id="quinlanVosHid">
+            <div class="charImgHid charImg6">
+            </div>
+            <h3 class="charTitleHid">Quinlan Vos</h3>
+            <p class="charDescrip">Found to be Force-sensitive at a young age, <b>Quinlan Vos</b> was initially trained on his homeworld of Kiffu by the Jedi Tholme.  After his great-aunt Tinte Vos sacrificed his parents, Quian and Pethros Vos, to Anzati vampires, Tholme brought Quinlan to the Jedi Temple on Coruscant.<br><br>On one mission, Vos saved a Force-sensitive girl named Aayla Secura from a wampa, before bring her back to the Jedi Order.  Secura later became his Padawan once Vos had become a Jedi Knight.<br><br>Vos and Secura were used by the corrupt Senator Chom Frey Kaa as a test subject for his drug glitteryll, which wiped both of their memories.  With help from the smuggler Vilmarh Grahrk, Vos was able to uncover this conspiracy and bring Kaa to justice.  He then returned to the Jedi to be retrained.<br><br>Secura, on the other hand, stumbled upon the ancient Dark Jedi Volfe Karkko, who had been imprisoned in stasis for a millennia.  She briefly became his apprentice, although Karkko was killed by Vos.<br><br>During the Clone Wars, Vos went undercover in the Confederacy of Independent Systems as one of Dooku's Dark Acolytes.  This deception carried on for so long that he nearly succumbed to the dark side for real, and even his closest allies were unaware of his true allegiance.  He finally renounced the dark side for good during the Siege of Saleucami, destroying a cloned army of Morgukai assassins that the Confederacy was attempting to grow.<br><br>Vos was stationed on Kashyyyk when Order 66 was given, although he was able to survive with help from Grahrk.  He then went into hiding with Tholme, who had also survived, his secret lover Khaleen Hentz, and their newborn son Korto Vos.</p>
+            <button type="button" class="close" onclick="quinlanVosClose()">&times;</button>
+          </div>
+          <div class="char" id="darthKrayt">
+            <div class="charImg charImg7">
+            </div>
+            <h3 class="charTitle">Darth Krayt</h3>
+            <p class="charSum">A former Tusken Raider and Jedi named A'Sharad Hett who survived Order 66 only to turn to the dark side and found the One Sith.</p>
+            <button type="button" class="view" onclick="darthKraytView()">View</button>
+          </div>
+          <div class="charHid" id="darthKraytHid">
+            <div class="charImgHid charImg7">
+            </div>
+            <h3 class="charTitleHid">Darth Krayt</h3>
+            <p class="charDescrip">Just like his father, the former Jedi Sharad Hett, <b>A'Sharad Hett</b> was a Human raised in the culture of the Tusken Raiders.  He never knew his mother, another Human named K'Sheek, as she mysteriously vanished into a sandstorm shortly after his birth.<br><br>When A'Sharad was fifteen, Jabba the Hutt orchestrated a war between the Humans and Tuskens on Tatooine in order to increase demand for old weapons.  Sharad was killed in this conflict by the Jedi-turned-bounty hunter Aurra Sing.  Honoring his dying wish, the Jedi Ki-Adi-Mundi took A'Sharad back to the Jedi Order to become his Padawan.<br><br>Hett briefly considered leaving the Jedi after giving into the dark side during a rematch with Sing.  Instead, he continued his training under An'ya Kuro, who specialized in "difficult" students.  After becoming a Jedi Knight, Hett took on a Padawan of his own named Bhat Jul.<br><br>Hett fought in the Clone Wars and managed to survive Order 66.  Returning to Tatooine, he became the chief of his former Tusken tribe and led them to war against the Humans.  His reign of terror here ended when he was defeated by Obi-Wan Kenobi.  Exiled from Tatooine, he became a bounty hunter.<br><br>One of Hett's quaries led him to the Sith homeworld of Korriban.  There, he studied the dark side from the holocron of the ancient Sith Lord XoXaan.  He intended to use these skills to destroy Emperor Palpatine and Darth Vader, although by the time he left Korriban, they had already been defeated Luke Skywalker.<br><br>Fleeing into the Unknown Regions, Hett was captured by the extra-galactic Yuuzhan Vong.  It was here that he met the Dark Jedi Vergere, who completed his conversion to the Sith.  However, Vergere abandoned him when he expressed his belief that the Sith should seek strength in numbers instead of the Rule of Two.<br><br>After escaping the Vong, Hett adopted the name <b>Darth Krayt</b> and founded the One Sith on Korriban.  For over a century, they remained in hiding and covertly manipulated galactic events.  Krayt was forced to reveal himself on one occasion, forming an alliance with Luke to defeat the dark side entity Abeloth.<br><br>When Luke's grandson Kol Skywalker conceived a plan to use Vong technology to repair the damage inflicted by the Yuuzhan Vong War, the One Sith sabotaged this, orchestrating a war between the Galactic Alliance and the Fel Empire.  They then revealed themselves and entered the conflict on the side of the Empire.  Once the Jedi and the Alliance had been defeated, Krayt betrayed and usurped Emperor Roan Fel.<br><br>However, Krayt was dying from Yorik-Kul that the Vong had implanted in him.  The only person capable of healing him was Kol's son Cade Skywalker due to his unique dark transfer ability.  Krayt captured Cade and attempted to turn him to the dark side, but Cade was able to resist.<br><br>Krayt finally did learn to heal himself from the spirit of the ancient Sith Lord Karness Muur.  Immediately after, he was betrayed and murdered by his right-hand man, Darth Wyyrlok.  Krayt was able to use his newfound abilities to heal his body and resurrect himself, though.<br><br>With an army of new Sith troopers, Krayt killed Wyyrlok and reclaimed control of the One Sith.  He planned to become immortal by transfering his essense into Cade's body, but was killed by Cade before he could do this.  To prevent Krayt from healing himself again, Cade vaporized his body in Coruscant's sun.</p>
+            <button type="button" class="close" onclick="darthKraytClose()">&times;</button>
+          </div>
+          <div class="char" id="grandAdmiralThrawn">
+            <div class="charImg charImg8">
+            </div>
+            <h3 class="charTitle">Grand Admiral Thrawn</h3>
+            <p class="charSum">The only alien grand admiral who assumed control of the Galactic Empire after the death of Emperor Palpatine and waged war against the New Republic.</p>
+            <button type="button" class="view" onclick="grandAdmiralThrawnView()">View</button>
+          </div>
+          <div class="charHid" id="grandAdmiralThrawnHid">
+            <div class="charImgHid charImg8">
+            </div>
+            <h3 class="charTitleHid">Grand Admiral Thrawn</h3>
+            <p class="charDescrip">As the youngest commander in the history of the Chiss Ascendancy, <b>Mitth'raw'nuruodo</b> was something of a tactical savant.  His first encounter with the greater galaxy was when he met the Human smuggler Jorj Car'das, who helped him fight off an attack by the Vagaari.<br><br>Darth Sidious contacted Mitth'raw'nuruodo to destroy the <i>Outbound Flight</i>, a starship tasked with finding extra-galactic life, so that its presence would not provoke the Yuuzhan Vong lurking outside of the galaxy.  Among the casualties of its destruction was its leader, the Jedi Jorus C'baoth.  Unfortunately, Mitth'raw'nuruodo's brother Mitth'ras'safis perished as well.<br><br>Many of Mitth'raw'nuruodo's tactics, such as preemptive strikes, went against the philosophies of the Ascendancy.  As a result of this, he was eventually court-martialed and exiled.  Mitth'raw'nuruodo was rescued from exile by Captain Voss Parck, who came across him while pursuing the smuggler Booster Terrik.<br><br>Parck brought Mitth'raw'nuruodo back to Sidious, now known publicly as Emperor Palpatine.  Within the Galactic Empire, he went by his core name of <b>Thrawn</b> to avoid the anti-alien prejudices of Humans.  Thrawn quickly rose through the ranks to become the thirteenth grand admiral, a position Palpatine created specifically for him.<br><br>Secretly, Thrawn also founded the Empire of the Hand in the Unknown Regions to keep the Vong at bay.  He recruited those who were disillusioned with the war between the Empire and the Rebel Alliance, like the vigilante stormtrooper unit the Hand of Judgement and the defected Imperial pilot Baron Soontir Fel.<br><br>For many years, Thrawn had a bitter rivalry with the alien warlord Nuso Esva.  This culminated in a final battle on Quethold, where Esva had formed an alliance with the Quesoth queen.  When he realized the battle was lost, Esva betrayed and murdered the queen.  He was subsequently killed by her Quesoth servants.<br><br>Afterward, Thrawn returned to assume control of the Imperial Military.  He took the <i>Chimera</i> as his personal flagship and made Captain Gilad Pellaeon his right-hand man.  Thrawn also recruited Joruus C'baoth, an insane clone of Jorus C'baoth, using his battle meditation to bolster his forces.<br><br>However, Princess Leia Organa discovered that the Empire was actively poisoning Honoghr in order to force its native Noghri into service.  After she exposed this, Thrawn's Noghri bodyguard Ruhk assassinated him.<br><br>A decade after Thrawn's death, Pellaeon began peace talks with the Republic.  Wanting to prevent this, Moff Vilim Disra and Major Grodin Tierce hired the con-man Flim to impersonate Thrawn.  Ironically, Thrawn actually did grow a clone of himself at the Empire of the Hand's stronghold on Nirauan, although it was destroyed before it could finish maturing.</p>
+            <button type="button" class="close" onclick="grandAdmiralThrawnClose()">&times;</button>
+          </div>
+          <div class="char" id="lumiya">
+            <div class="charImg charImg9">
+            </div>
+            <h3 class="charTitle">Lumiya</h3>
+            <p class="charSum">The apprentice of Emperor Palpatine and Darth Vader who revived the Sith Order with the creation of Darth Caedus.</p>
+            <button type="button" class="view" onclick="lumiyaView()">View</button>
+          </div>
+          <div class="charHid" id="lumiyaHid">
+            <div class="charImgHid charImg9">
+            </div>
+            <h3 class="charTitleHid">Lumiya</h3>
+            <p class="charDescrip">Darth Vader took an early interest in the Force-sensitive <b>Shira Elan Colla Brie</b>, enrolling her in the Imperial Academy on Carida.  Despite an incident where she accidentally killed six other trainees with an MT-ST, she graduated with top honors.<br><br>Brie was sent to infiltrate the Rebel Alliance and either kill or discredit Luke Skywalker.  She and Skywalker struck up a romantic relationship during this time.  In one battle, Skywalker's targeting computers were knocked out and he had to rely on the Force to differentiate between friend and foe.  The Force told him to fire on Brie's starfighter, presumably killing her.  As a result of this, he was temporarily court-martialed.<br><br>However, Brie in fact survived and was rebuilt as a cyborg by Darth Vader.  She adopted the name <b>Lumiya</b> and was trained as one of the Emperor's Hands.<br><br>After the deaths of Emperor Palpatine and Vader, Lumiya carried on the Sith lineage by taking the Force-sensitive stormtrooper Flint as her own apprentice.  She aided the Nagai in their invasion of the galaxy, before switching her allegiance to their rivals, the Tofs, when they seemed to be losing.<br><br>This brought Lumiya back into conflict with Skywalker, who had to construct an additional shoto lightsaber in order to defeat her exotic lightwhip.  Skywalker managed to turn Flint to the light side, so Lumiya killed him.<br><br>Her next apprentice was the Force-sensitive Royal Guard Carnor Jax.  When Palpatine returned to take control of the Empire, Lumiya and Jax sabotaged all of his clone bodies so that Jax could assume the role of emperor.  Jax was killed by the fellow Royal Guard Kir Kanos, though.<br><br>During the Yuuzhan Vong War, Lumiya covertly fought against the Vong.  She also met the Dark Jedi Vergere, who completed her formal Sith training.  Lumiya and Vergere planned to resurrect the Rule of Two by finding a champion who they could turn to the dark side, and settled on Vader's grandson Jacen Solo.<br><br>With the galaxy on the brink of chaos at the outset of the Second Galactic Civil War, Lumiya revealed herself to Solo and seduced him to the dark side.  Once Solo had completed his transformation into the Sith Lord Darth Caedus, Lumiya sacrificed herself in combat against Skywalker.</p>
+            <button type="button" class="close" onclick="lumiyaClose()">&times;</button>
+          </div>
+          <div class="char" id="jacenSolo">
+            <div class="charImg charImg10">
+            </div>
+            <h3 class="charTitle">Jacen Solo</h3>
+            <p class="charSum">The son of Han Solo and Princess Leia Organa who was turned to the dark side by Lumiya and became the Sith Lord Darth Caedus.</p>
+            <button type="button" class="view" onclick="jacenSoloView()">View</button>
+          </div>
+          <div class="charHid" id="jacenSoloHid">
+            <div class="charImgHid charImg10">
+            </div>
+            <h3 class="charTitleHid">Jacen Solo</h3>
+            <p class="charDescrip">Along with his twin sister Jaina Solo, <b>Jacen Solo</b> was born to Han Solo and Princess Leia Organa during the Thrawn Campaign.  Their younger brother Anakin Solo was born two years later.<br><br>When Jacen was five, he and his siblings were kidnapped by the Dark Jedi Hethrir and his Empire Reborn movement, who planned to sacrifice them to the inter-dimensional entity Waru.  When they were nine, they helped defeat the Sacorrian Triad by discovering the planetary repulsors in the Corellian system.<br><br>Jacen was apprenticed to Luke Skywalker at the Jedi Praxeum on Yavin 4.  The Solo siblings faced many threats during this time, such as the Second Imperium, the Diversity Alliance, and the Black Sun.<br><br>A philosopher more than a warrior, Jacen struggled with being forced onto the frontlines in the Yuuzhan Vong War.  He was part of a Jedi strike team led by Anakin that was sent to destroy the Jedi-killing voxyn queen on Myrkr.  Although they did succeed in their mission, Anakin was killed and Jacen captured.<br><br>The Vong held Jacen captive and tortured him for a whole year.  Here, he was apprenticed to the Dark Jedi Vergere, who conspired with the Sith Lady Lumiya to turn him to the dark side.<br><br>Jacen eventually returned to the Jedi Order and was granted the rank of Jedi Knight.  During the final battle on Yuuzhan'tar, he killed the true mastermind behind the war, the Force-sensitive Vong Omni, by achieving true oneness with the Force.<br><br>Afterward, Jacen traveled the galaxy for five years and learned obscure Force abilities from different sects like the Aing-Tii, Mind Walkers, and Nightsisters.  He had a vision of the Sith Lord Darth Krayt ruling the galaxy and became determined to prevent this future.<br><br>During the Dark Nest Crisis, Jacen spent a night with the Jedi and Hapan princess Tenel Ka Djo in exchange for her sending the Hapan fleet to aid the Killiks against the Chiss Ascendancy.  This resulted in the conception of their illegitimate daughter Allana Solo.<br><br>Jacen later allowed himself to be seduced to the dark side by Lumiya in order to prevent a future where Luke died.  After sacrificing Luke's wife Mara Jade, Jacen became the Sith Lord <b>Darth Caedus</b>.  He attempted to take Luke and Mara's son Ben Skywalker as an apprentice of his own, but Ben proved too incorrptible.  Instead, he settled on the Jedi Tahiri Veila.<br><br>Along with Supreme Commander Cha Niathal, Caedus launched a coup against Chief of State Cal Omas.  This allowed Caedus and Niathal to assume control of the Galactic Alliance, waging war against the Confederation in the Second Galactic Civil War.  Eventually, both Niathal and the Jedi defected from the Alliance to fight against Caedus.<br><br>In a duel with Jaina, Caedus sacrificed himself to prevent Djo and Allana from being killed by the Council of Moffs.  His spirit later appeared to Luke in the Lake of Apparitions to warn him about the rise of Krayt.</p>
+            <button type="button" class="close" onclick="jacenSoloClose()">&times;</button>
+          </div>
+          <div class="char" id="morriganCorde">
+            <div class="charImg charImg11">
+            </div>
+            <h3 class="charTitle">Morrigan Corde</h3>
+            <p class="charSum">An Imperial agent and the estranged mother of Cade Skywalker who led a secret double life as Moff Nyna Calixte.</p>
+            <button type="button" class="view" onclick="morriganCordeView()">View</button>
+          </div>
+          <div class="charHid" id="morriganCordeHid">
+            <div class="charImgHid charImg11">
+            </div>
+            <h3 class="charTitleHid">Morrigan Corde</h3>
+            <p class="charDescrip">While on a mission with Jedi Grand Master Kol Skywalker, the Imperial agent <b>Morrigan Corde</b> fell in love with him.  They had a son named Cade Skywalker, but Corde left to return to Imperial service when Cade was just a toddler.<br><br>Under the identity of Moff <b>Nyna Calixte</b>, she married Moff Rulf Yage and had a daughter named Gunn Yage with him.  However, Calixte later divorced Rulf to pursue an affair with Grand Moff Morlish Veed.<br><br>When war broke out between the Galactic Alliance and the Fel Empire over Kol's failed Ossus Project, Calixte manipulated Emperor Roan Fel into forming an alliance with the One Sith.  Its leader, Darth Krayt, betrayed and usurped Fel once victory was assured.  Calixte switched allegiances back to Fel and served as a spy for him.<br><br>She later returned to her Morrigan Corde identity to rescue Cade when he was captured by the Sith.  This became her permanent self after Veed discovered her to be a spy for Fel.  During the final battle on Coruscant, Corde killed him.</p>
+            <button type="button" class="close" onclick="morriganCordeClose()">&times;</button>
+          </div>
+          <div class="char" id="cadeSkywalker">
+            <div class="charImg charImg12">
+            </div>
+            <h3 class="charTitle">Cade Skywalker</h3>
+            <p class="charSum">The descendent of Anakin and Luke Skywalker who survived the Third Jedi Purge and ended it by killing Darth Krayt.</p>
+            <button type="button" class="view" onclick="cadeSkywalkerView()">View</button>
+          </div>
+          <div class="charHid" id="cadeSkywalkerHid">
+            <div class="charImgHid charImg12">
+            </div>
+            <h3 class="charTitleHid">Cade Skywalker</h3>
+            <p class="charDescrip">A descendent of Anakin and Luke Skywalker, <b>Cade Skywalker</b> was born to Jedi Grand Master Kol Skywalker and the Imperial agent Morrigan Corde.  He never knew Corde, though, since she left when he was just a toddler.<br><br>Cade was trained by the Jedi Wolf Sazen, until the One Sith conquered the galaxy and enacted the Third Jedi Purge.  Kol was killed by the Sith Lord Darth Nihl in this massacre and Cade was presumed dead as well.<br><br>In truth, Cade was rescued by the pirate Rav and joined his crew.  He traveled the galaxy as a bounty hunter in his starship, the <i>Mynock</i>, along with his partners, Jariah Syn and Deliah Blue.  With Blue, he developed a sort of romantic relationship.<br><br>While aiding Princess Marasiah Fel in escaping from the Sith, Cade was reunited with his old Jedi friends.  He was later captured by the One Sith's leader Darth Krayt, who was dying from Yorik-Kul implants and sought to use Cade's unique dark transfer ability to heal himself.  Cade was briefly trained as a Sith by Darth Talon, before being rescued from the Sith Temple by Syn and Blue.<br><br>With help from the Imperial Knights and the spirit of the ancient Sith Lord Karness Muur, Cade set a trap to assassinate Krayt.  This mission was a seeming success, as Krayt ended up being betrayed and murdered by his right-hand man Darth Wyyrlok.<br><br>However, a year later, Cade sensed Krayt's resurrection through the Force.  After his uncle Nat Skywalker was killed during the Sith destruction of the secret Jedi Temple on Taivas, Cade led a attack on Coruscant.  Krayt attempted to transfer his essence into Cade's body, although Cade was able to kill him once more.<br><br>Cade then vaporized Krayt's body in Coruscant's sun to stop him from returning again.  He planned on going into the sun as well so that Krayt could not take his body, but Luke's spirit convinced him to live.</p>
+            <button type="button" class="close" onclick="cadeSkywalkerClose()">&times;</button>
+          </div>
+        </div>
+      </article>
+      <footer class="footer">
+        <p>&copy; Chastant Shontz 2021</p>
+      </footer>
+    </div>
+    <div class="layer" id="layer" onclick="uncover()">
+    </div>
+    <script type="text/javascript" src="page.js"></script>
+  </body>
+</html>
